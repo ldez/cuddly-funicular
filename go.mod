@@ -2,7 +2,7 @@ module github.com/ldez/cuddly-funicular
 
 go 1.22.0
 
-//toolchain go1.23.1
+toolchain go1.23.1
 
 require github.com/grpc-ecosystem/grpc-gateway/v2 v2.23.0
 
