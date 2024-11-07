@@ -2,6 +2,9 @@ name: Example
 
 on: [push, pull_request]
 
+env:
+  GOTOOLCHAIN: local
+
 jobs:
   go122:
     name: go1.22
@@ -21,8 +24,6 @@ jobs:
       - run: golangci-lint --version
 
       - run: golangci-lint run
-        env:
-          GOTOOLCHAIN: local
 
   go123:
     name: go1.23
@@ -44,5 +45,3 @@ jobs:
       - run: golangci-lint --version
 
       - run: golangci-lint run
-        env:
-          GOTOOLCHAIN: local
